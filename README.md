@@ -35,8 +35,8 @@ Usage<a name="usage"></a>
     
 **Convert automatically**
 
-    var enText = $('#em_text').enVal();
-    var emText = $('#en_text').emVal();
+    $('#em_text').autoEn();
+    $('#en_text').autoEm();
     
 **with Callback**
 
