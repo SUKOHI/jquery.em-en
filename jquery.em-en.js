@@ -44,10 +44,6 @@
 
                 });
 
-            } else {
-
-                MNConverter.notMatchLog();
-
             }
 
             return enText;
