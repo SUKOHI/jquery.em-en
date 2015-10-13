@@ -51,6 +51,15 @@ Usage<a name="usage"></a>
 
     });
 
+**Set Additional Replacements**
+
+    $.setEmEnReplacements({
+    
+        em: ['ー', '＠'],
+        en: ['-', '@']
+    
+    });
+
 License
 ====
 
@@ -86,7 +95,42 @@ jQuery と このパッケージを読み込む
 使い方
 ====
 
-[こちら](#usage)をご覧ください。
+**テキスト**
+
+    var enText = $.toEn('５５５ＭＭＭ');
+    var emText = $.toEm('555MMM');
+    
+**セレクタ**
+
+    var enText = $('#em_text').enVal();
+    var emText = $('#en_text').emVal();
+    
+**自動変換**
+
+    $('#em_text').autoEn();
+    $('#en_text').autoEm();
+    
+**自動変換後のコールバック**
+
+    $('#em_text').autoEn(function(e, enText){
+
+        alert(enText);
+
+    });
+    $('#en_text').autoEm(function(e, emText){
+
+        alert(emText);
+
+    });
+
+**追加の置換文字**
+
+    $.setEmEnReplacements({
+    
+        em: ['ー', '＠'],     // 全角
+        en: ['-', '@']      // 半角
+    
+    });
 
 ライセンス
 ====
