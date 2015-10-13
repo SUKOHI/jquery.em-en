@@ -1,5 +1,5 @@
 # jquery.em-en
-A jQuery plugin to convert EM and EN text.  [日本語の説明](#japanese)
+A jQuery plugin to convert EM and EN text.  （[日本語の説明](#japanese)）
 
 Requirements
 ====
